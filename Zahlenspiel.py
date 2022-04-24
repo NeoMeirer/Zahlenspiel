@@ -12,12 +12,12 @@ name2 = input("Spieler 2 gebe deinen Namen ein: ")
 while True:
 
     while True:
-	    try:
-                zahl1 = int(input("- " + name1 + " gebe deine Zahl ein: "))
-	    except ValueError:             
-		    print(name1 + ", du musst eine Ganzzahl eingeben.")
-	    else:
-		    break
+        try:
+            zahl1 = int(input("- " + name1 + " gebe deine Zahl ein: "))
+        except ValueError:
+            print(name1 + ", du musst eine Ganzzahl eingeben.")
+        else:
+            break
 	
     if zahl > zahl1:
         print("Die gesuchte Zahl ist größer als ", zahl1)   
@@ -52,4 +52,3 @@ while True:
         print("Die Gesuchte Zahl ist ", zahl)         
         print(name2, " gewinnt!")
         break
-
